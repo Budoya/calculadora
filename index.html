@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora basica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>calculadora basicona</h1>
+    <div class="calculadora">
+        <p id="res"></p>
+        <table>
+            <tr>
+                <td><button id="clear" class="botao" onclick='limpar()'>c</button></td>
+                <td><button id="apaga" class="botao" onclick='apagar()'><</button></td>
+                <td><button id="/" class="botao" onclick='put("/")'>:</button></td>
+                <td><button id="x" class="botao" onclick='put("*")'>x</button></td>
+            </tr>
+            <tr>
+                <td><button id="7" class="botao" onclick='put("7")'>7</button></td>
+                <td><button id="8" class="botao" onclick='put("8")'>8</button></td>
+                <td><button id="9" class="botao" onclick='put("9")'>9</button></td>
+                <td><button id="-" class="botao" onclick='put("-")'>-</button></td>
+            </tr>
+            <tr>
+                <td><button id="4" class="botao" onclick='put("4")'>4</button></td>
+                <td><button id="5" class="botao" onclick='put("5")'>5</button></td>
+                <td><button id="6" class="botao" onclick='put("6")'>6</button></td>
+                <td><button id="+" class="botao" onclick='put("+")'>+</button></td>
+            </tr>
+            <tr>
+                <td><button id="3" class="botao" onclick='put("3")'>3</button></td>
+                <td><button id="2" class="botao" onclick='put("2")'>2</button></td>
+                <td><button id="1" class="botao" onclick='put("1")'>1</button></td>
+                <td rowspan="2"><button id="=" class="botao btn" onclick=resolva()>=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="0" class="botao btn2" onclick='put("0")'>0</button></td>
+                <td><button id="." class="botao" onclick='put(".")'>.</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="scripty.js"></script>
+</body>
+
+</html>
